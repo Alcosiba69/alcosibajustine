@@ -1,0 +1,41 @@
+<html>
+    <body>
+       <style>
+        body { 
+            text-align: center;
+        }
+        
+       </style>
+        <h1>Number System Converter</h1>
+        <p>This webpage is designed as a Number System Converter, which allows users to convert a decimal number into its equivalent binary, octal, and hexadecimal values. The user enters a decimal number in the input field, and the corresponding values are automatically displayed in the other fields for binary, octal, and hexadecimal systems.
+         The page also includes a conversion table showcasing the decimal values from 10 to 19, along with their corresponding values in binary, octal, and hexadecimal systems.</p> 
+        <h1>Explanation</h1>
+        <p>The converter section consists of four input fields with labels:
+            Decimal input: The user is prompted to enter a decimal number. This number is then converted into binary, octal, and hexadecimal values as the user types.
+            Octal output: This field shows the octal equivalent of the decimal number.
+            Hexadecimal output: This field shows the hexadecimal equivalent.
+            Binary output: This field shows the binary equivalent.
+            Conversion Table: A table is provided below the converter section. This table illustrates how specific decimal numbers (from 10 to 19) are represented in binary, octal, and hexadecimal formats. This can be helpful as a reference for understanding how number systems are related.</p>
+            <h1>JavaScript Functionality</h1>
+            <p>The convertFromDecimal() function is used to handle the conversion:
+                It listens for any input in the decimal number field.
+                The input value is converted to an integer using parseInt(decimal, 10).
+                If the input is a valid number, it converts the decimal number to its binary, octal, and hexadecimal equivalents:
+                toString(8) converts the decimal number to octal.
+                toString(16) converts it to hexadecimal and the result is capitalized using toUpperCase().
+                toString(2) converts it to binary.
+                If the input is invalid (not a number), the fields for binary, octal, and hexadecimal are cleared.
+                The input field for Decimal has an event listener (oninput="convertFromDecimal(this.value)") which triggers the conversion each time the user types in the decimal field, ensuring real-time feedback for the user.</p>
+                <h1>Table</h1>
+                <p>The conversion table shows the number system equivalents for decimal numbers 10 to 19:
+                    For example, the decimal number 10 is shown in binary as 1010, in octal as 12, and in hexadecimal as A.
+                    This table helps users understand how decimal values are represented in other number systems.</p>
+                    <h1>Summary</h1>
+                    <p>This tool allows easy conversion between the decimal, binary, octal, and hexadecimal number systems.
+                        The user enters a decimal number, and the other fields automatically update with the corresponding values in binary, octal, and hexadecimal.
+                        The conversion table gives a reference for quick lookups of these values for decimal numbers between 10 and 19.
+                        The JavaScript ensures the conversion happens dynamically, providing a seamless user experience.</p>
+
+              
+    </body>
+</html>

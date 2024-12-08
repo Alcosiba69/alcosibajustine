@@ -1,0 +1,214 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    </style>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number System Converter</title>
+    <style>
+        body {
+            
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            border: #ffffff;
+            background-image: url(giphy\ gwapo.webp);
+            background-size: cover;
+            background-repeat: no-repeat;
+    
+         
+
+        }
+        .converter {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        .converter label {
+            font-weight: bold;
+        }
+        .converter input {
+            width: 100%;
+            padding: 8px;
+            margin: 10px 0;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Number System Conversion Table</h1>
+    
+    <div class="converter">
+        <label for="decimal">Decimal</label>
+        <input type="number" id="decimal" placeholder="Enter decimal number" oninput="convertFromDecimal(this.value)">
+
+        <label for="octal">Octal</label>
+        <input type="text" id="octal" placeholder="Octal output" readonly>
+
+        <label for="hexadecimal">Hexadecimal</label>
+        <input type="text" id="hexadecimal" placeholder="Hexadecimal output" readonly>
+
+        <label for="binary">Binary</label>
+        <input type="text" id="binary" placeholder="Binary output" readonly>
+    </div>
+
+    <script>
+        function convertFromDecimal(decimal) {
+            const decimalNumber = parseInt(decimal, 10);
+            if (!isNaN(decimalNumber)) {
+                document.getElementById("octal").value = decimalNumber.toString(8);
+                document.getElementById("hexadecimal").value = decimalNumber.toString(16).toUpperCase();
+                document.getElementById("binary").value = decimalNumber.toString(2);
+            } else {
+                document.getElementById("octal").value = "";
+                document.getElementById("hexadecimal").value = "";
+                document.getElementById("binary").value = "";
+            }
+        }
+    </script>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number System Conversion Table</title>
+    <style>
+        table {
+            width: 50%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            text-align: center;
+          
+            color: #ffffff;
+        }
+        th, td {
+            padding: 10px;
+            border: 3px solid #fffdfd;
+         
+            
+        }
+        th {
+            background-color: #fffcfc;
+            border: 3px solid rgb(255, 248, 248);
+        }
+
+       nav {
+         
+    background-color: #ffffff;
+    color: #fffdfd;
+    display: inline;
+    }
+
+   h1 {
+
+   color: #fffcfc;
+    display: inline;
+
+    }
+
+    table tr th{
+        color: rgb(255, 255, 255);
+       background-color: black;
+
+    }
+
+        
+
+       
+
+
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Number System Conversion Table</h1>
+
+        
+    <table>
+       
+       <tr>
+       
+            <th>Decimal</th>
+            <th>Binary</th>
+            <th>Octal</th>
+            <th>Hexadecimal</th>
+      
+        </tr>
+
+        <tr>
+            <td>10</td>
+            <td>1010</td>
+            <td>12</td>
+            <td>A</td>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td>1011</td>
+            <td>13</td>
+            <td>B</td>
+        </tr>
+        <tr>
+            <td>12</td>
+            <td>1100</td>
+            <td>14</td>
+            <td>C</td>
+        </tr>
+        <tr>
+            <td>13</td>
+            <td>1101</td>
+            <td>15</td>
+            <td>D</td>
+        </tr>
+        <tr>
+            <td>14</td>
+            <td>1110</td>
+            <td>16</td>
+            <td>E</td>
+        </tr>
+        <tr>
+            <td>15</td>
+            <td>1111</td>
+            <td>17</td>
+            <td>F</td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td>10000</td>
+            <td>20</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>17</td>
+            <td>10001</td>
+            <td>21</td>
+            <td>11</td>
+        </tr>
+        <tr>
+            <td>18</td>
+            <td>10010</td>
+            <td>22</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>19</td>
+            <td>10011</td>
+            <td>23</td>
+            <td>13</td>
+           
+        </tr>
+   
+    </table>
+
+</body>
+</html>
+<style>
+    body{
+        text-align: center;
+    }
+
+    
+</style>
